@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello world</title>
+    <style>
+        table,tr,td{
+            border:1px solid black;
+            text-align: center;
+            text-transform: capitalize;
+            width: 35%;
+            height: 30px;
+        }
+        caption{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form style="display: table-row;" class="form-one">
+        <fieldset>
+            <legend> Biodata</legend>
+            <label for="name">Nama lengkap :</label>
+            <input id="name" type="text" maxlength="50" size="25px"><br>
+            <label for="email">Alamat email :</label>
+            <input id="email" type="email" size="25px"><br>
+            <label for="psd" name="password">Kata sandi :</label>
+            <input id="psd" type="password" size="25px"> 
+        </fieldset>
+    </form>
+
+    <form class="form-two" style="display: table-row;">
+        <fieldset>
+            <legend>Kontak Personal</legend>
+            <label for="telp">No.Telp :</label>
+            <input id="telp" type="tel" maxlength="12" size="25px"><br>
+            <label for="favcolor">Warna favorit :</label>
+            <input id="favcolor" type="color" value="#865DFF"><br>
+            <label for="date">Tgl/bln/thn :</label>
+            <input id="date" type="date"><br>
+            <label for="time">Waktu :</label>
+            <input id="time" type="time"><br>
+            <label for="date-time">waktu tanggal :</label>
+            <input id="date-time" type="datetime-local"><br>
+            <label for="month">bulan :</label>
+            <input id="month" type="month"><br>
+            <label for="place-born">Tempat lahir</label>
+            <input list="place-born" type="text">
+        </fieldset>
+        <datalist id="place-born">
+            <option>tasikmalaya</option>
+            <option>ciamis</option>
+            <option>bogor</option>
+        </datalist>
+    </form>
+    <p style="accent-color: black;">
+        1. Tentukan karir mu nanti masa depan<br>
+           Pilih salah satu :<br>
+        <input type="radio" name="select">Frond-End<br>
+        <input type="radio" name="select">Back-End<br>
+        <input type="radio" name="select">Full Stack<br>
+        <input type="radio" name="select">cyliders<br>
+    </p>
+
+    <p style="accent-color: purple;">
+        <input type="checkbox">Saya setuju dengan tindakan ini
+    </p>
+    <table style="padding:15px;">
+        <colgroup>
+            <col span="1" style="background-color:red;">
+            <col span="1" style="background-color:yellow;">
+            <col span="1" style="background-color:green;">
+            <col span="1" style="background-color:lightblue;">
+        </colgroup>
+        <caption>Daftar siswa SMK N 1 CIAMIS</caption>
+            <tr>
+                <th>Absen</th>
+                <th>Nama</th>
+                <th>Kelas</th>
+                <th>Jurusan</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Acep</td>
+                <td>10 hotel</td>
+                <td>Perhotelan</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Ucup</td>
+                <td>11 hotel</td>
+                <td>Perhotelan</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Dhani</td>
+                <td>11 mplb</td>
+                <td>Perkantoran</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>aji setiawan</td>
+                <td>10 rpl</td>
+                <td>Rekayasa perangka lunak</td>
+            </tr>
+    </table>
+  <script src="main.js"></script>
+</body>
+</html>
